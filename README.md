@@ -1,0 +1,2 @@
+# semi-supervised GAN for mnist image classification 20% increase
+ This refers to pytorch implementation of semi-supervised learning. The idea is to have few labeled dataset, say 10 examples per class, and a large unlabeled dataset, to improve accuracy on the test set. For this reason, the discriminator of the GAN is turned to classifier plus regular discriminator.  Notably, a custom activation function is used, refer to https://arxiv.org/abs/1606.03498. Using 10 labeled examples, 20% increase in accuracy is seen on the test set.
